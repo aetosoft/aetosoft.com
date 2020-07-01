@@ -2,12 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aetosoftware Consulting Services</title>
+    <title>Aetosoft Cloud Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function flipToBack() {
+            document.getElementById("mainContent").style.display = "none";
+            document.getElementById("backContent").style.display = "block";
+        }
+        function flipToFront() {
+            document.getElementById("backContent").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+        }
+    </script>
 </head>
 <body>
+    <div id="mainContainer">
+        <div id="mainContentBlock">
+            <div id="mainContent">
+                
+                <div id="avatarImageBlock" style="background-image: url('images/aetosoft.jpg');">
+                </div>
+                
+                <div id="frontContentBox">
+                    <div id="nameIntroBox">
+                        <h1>Aetosoft Consulting</h1>
+                        <h2>Experts in BigData and Enterprise Software</h2>
+                    </div>
 
-    <h2>Welcome to Aetosoft !</h2>
-    <br>
-    Hello Vinu !
+                    
+                        <ul id="featuredLinksBox">
+                            
+                        </ul>
+                    
+                </div>
+                
+                <div class="backFlipBox">
+                    <a href="#" onclick="flipToBack();"><span class="fa fa-rotate-left"></span>&nbsp;flip to back</a>
+                </div>
+                
+            </div>
+
+            
+            <div id="backContent">
+                <div class="backFlipBox">
+                    <a href="#" onclick="flipToFront();"><span class="fa fa-rotate-right"></span>&nbsp;flip to front</a>
+                </div>
+                
+                <div id="backContentBody">
+                    <h1>Aetosoft</h1>
+                    <h2>Provides specialized consulting</h2>
+
+                    <div id="fullBioBox">
+                        <p>Over the years, the team gained expertise on various tools
+                        in BigData and Enterprise Software Development</p>
+
+                    </div>
+
+                    
+                        <ul id="allLinksBox">
+                            
+                                <li>
+                                    <a href="https://gitlab.com/enterprise-tutorials" title="GitLab Projects">
+                                        <i class="fa fa-link fa-fw"></i>
+                                        Sample GitLab Projects
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <div class="footer">
+                <p>&copy; Aetosoft. 
+                <!-- 
+                thank you for using MyStaticPage.com! 
+                Please keep this link back to us on your site as part of 
+                Creative Commons Attribution license aggreement.
+                https://creativecommons.org/licenses/by/4.0/
+                -->
+                created with <a href="http://mystaticpage.com" title="Create a personal web site">MyStaticPage</a>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
