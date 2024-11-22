@@ -1,95 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aetosoft Cloud Consulting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        function flipToBack() {
-            document.getElementById("mainContent").style.display = "none";
-            document.getElementById("backContent").style.display = "block";
+    <title>Aetosoft Cloud Consulting</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        function flipToFront() {
-            document.getElementById("backContent").style.display = "none";
-            document.getElementById("mainContent").style.display = "block";
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #1E88E5);
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
         }
-    </script>
+
+        header img {
+            max-width: 120px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 40px 10%;
+        }
+
+        section h2 {
+            color: #1E88E5;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .services div {
+            flex: 1 1 calc(33% - 20px);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .services div h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #1E88E5;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <div id="mainContainer">
-        <div id="mainContentBlock">
-            <div id="mainContent">
-                
-                <div id="avatarImageBlock" style="background-image: url('images/aetosoft.jpg');">
-                </div>
-                
-                <div id="frontContentBox">
-                    <div id="nameIntroBox">
-                        <h1>Aetosoft Consulting</h1>
-                        <h2>Experts in BigData and Enterprise Software</h2>
-                    </div>
+    <header>
+        <img src="https://drive.google.com/uc?id=1E0dFZuGvv2cmmjMvXaWNpHO0Puq7QjqT" alt="Aetosoft Logo">
+        <h1>Aetosoft Cloud Consulting</h1>
+        <p>Empowering Businesses with Scalable Cloud Solutions and Transforming Data into Insights.</p>
+    </header>
 
-                    
-                        <ul id="featuredLinksBox">
-                            
-                        </ul>
-                    
-                </div>
-                
-                <div class="backFlipBox">
-                    <a href="#" onclick="flipToBack();"><span class="fa fa-rotate-left"></span>&nbsp;flip to back</a>
-                </div>
-                
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div>
+                <h3>Big Data Solutions</h3>
+                <p>Unlock the power of your data with cutting-edge Big Data technologies tailored to your needs.</p>
             </div>
-
-            
-            <div id="backContent">
-                <div class="backFlipBox">
-                    <a href="#" onclick="flipToFront();"><span class="fa fa-rotate-right"></span>&nbsp;flip to front</a>
-                </div>
-                
-                <div id="backContentBody">
-                    <h1>Aetosoft</h1>
-                    <h2>Provides specialized consulting</h2>
-
-                    <div id="fullBioBox">
-                        <p>Over the years, the team gained expertise on various tools
-                        in BigData and Enterprise Software Development</p>
-
-                    </div>
-
-                    
-                        <ul id="allLinksBox">
-                            
-                                <li>
-                                    <a href="https://gitlab.com/" title="GitLab Projects">
-                                        <i class="fa fa-link fa-fw"></i>
-                                        Sample GitLab Projects
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    
-
-                </div>
+            <div>
+                <h3>Cloud Architecture</h3>
+                <p>Design and implement scalable, secure, and cost-effective cloud infrastructures.</p>
             </div>
-            
+            <div>
+                <h3>Data Migration</h3>
+                <p>Seamlessly migrate your data to the cloud with minimal disruption and maximum efficiency.</p>
+            </div>
         </div>
-        <footer>
-            <div class="footer">
-                <p>&copy; Aetosoft. 
-                <!-- 
-                thank you for using MyStaticPage.com! 
-                Please keep this link back to us on your site as part of 
-                Creative Commons Attribution license aggreement.
-                https://creativecommons.org/licenses/by/4.0/
-                -->
-                created with <a href="http://mystaticpage.com" title="Create a personal web site">MyStaticPage</a>
-                </p>
-            </div>
-        </footer>
-    </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us:</p>
+        <p>Email: <a href="mailto:aetosoft@gmail.com">aetosoft@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aetosoft Cloud Consulting. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
